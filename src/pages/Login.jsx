@@ -2,10 +2,10 @@ import React from 'react'
 import { Nav } from '../components/Nav.jsx';
 import { Link } from 'react-router-dom';
 import { Footer } from '../components/Footer.jsx';
-export const Login =()=>{
+export const Login = () => {
     return (
         <>
-            <Nav/>
+            <Nav />
             <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -31,16 +31,13 @@ export const Login =()=>{
                             </div>
                         </div>
 
+
                         <div>
                             <div className="flex items-center justify-between">
                                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
                                     Password
                                 </label>
-                                <div className="text-sm">
-                                    <a href="#" className="font-semibold text-[#017901] hover:text-[#017901]">
-                                        Forgot password?
-                                    </a>
-                                </div>
+              
                             </div>
                             <div className="mt-2">
                                 <input
@@ -52,8 +49,25 @@ export const Login =()=>{
                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#2ac42a] sm:text-sm sm:leading-6"
                                 />
                             </div>
+                            <div className="text-sm">
+                                <a href="#" className="font-semibold text-[#017901] hover:text-[#017901]">
+                                    Forgot password?
+                                </a>
+                            </div>
                         </div>
-
+                        <div className='flex items-center'>
+                            <label htmlFor="email" className="flex mr-5 text-sm font-medium leading-6 text-gray-900">
+                                Login as Organization
+                            </label>
+                            <div className="mt-2">
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type='checkbox'
+                                    className='bg-[#017901] ring-[#017901]'
+                                />
+                            </div>
+                        </div>
                         <div>
                             <button
                                 type="submit"
@@ -72,7 +86,7 @@ export const Login =()=>{
                     </p>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }

@@ -84,20 +84,20 @@ export const Home = () => {
           </div>
         </section>
         <div className='mt-[100px] flex justify-center items-center'>
-          <div className='w-3/4 py-5 bg-[#041e040b] p-3 flex flex-col items-center rounded-md'>
+          <div className='w-3/4 py-5 bg-[#041e040b] p-3 flex flex-col items-center rounded-md mb-10'>
             <h2 className='text-center text-[#017901] font-bold text-[40px]'>About us</h2>
             <span className='w-full flex flex-col justify-center items-center'>
               <small className='text-center text-sm w-2/3 text-neutral-400 '> Qless is your all in one solution for efficient and hassle free receipt generation. Designed for business of all sizes.
 
               </small>
-              <div className='relative w-full  flex justify-between gap-10 px-[50px] pb-10 pt-10'>
-                <div className='w-1/3 h-250px rounded-lg '>
+              <div className='relative w-full  flex flex-col md:flex-row justify-center md:justify-between gap-10 px-[50px] pb-10 pt-10'>
+                <div className='w-full md:w-1/3 h-250px rounded-lg '>
                   <img src={About} className=' top-0 rounded-xl h-full' alt="" />
                 </div>
-                <div className='w-1/3 h-250px rounded-lg '>
+                <div className='w-full md:w-1/3 h-250px rounded-lg '>
                   <img src={About} className=' top-0 rounded-xl' alt="" />
                 </div>
-                <div className='w-1/3 h-250px rounded-lg '>
+                <div className='w-full md:w-1/3 h-250px rounded-lg '>
                   <img src={About} className=' top-0 rounded-xl' alt="" />
                 </div>
               </div>

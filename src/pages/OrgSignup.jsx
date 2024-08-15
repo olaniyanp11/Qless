@@ -1,14 +1,15 @@
 import React from 'react'
-import { Nav } from '../components/Nav';
-import { Footer } from '../components/Footer';
-export const Signup =()=>{
+import { Nav } from '../components/Nav'
+import { Footer } from '../components/Footer'
+
+export const OrgSignup = () => {
     return (
         <>
             <Nav/>
             <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                        Signup As an Individual
+                        Signup As an Organization
                     </h2>
                 </div>
 
@@ -16,32 +17,32 @@ export const Signup =()=>{
                     <form action="#" method="POST" className="space-y-6">
                         <div>
                             <label htmlFor="text" className="block text-sm font-medium leading-6 text-gray-900">
-                                matric number
+                               Organization name
                             </label>
                             <div className="mt-2">
                                 <input
-                                    id="matricNumber"
-                                    name="matricNumber"
+                                    id="organizationName"
+                                    name="organizationName"
                                     type="text"
                                     required
-                                    placeholder='n/cs/23/4567'
-                                    autoComplete="matricNumber"
+                                    placeholder='organizationName'
+                                    autoComplete="organizationName"
                                     className="block w-full pl-4 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#017901] sm:text-sm sm:leading-6"
                                 />
                             </div>
                         </div>
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                                Email address
+                              Organization Email address
                             </label>
                             <div className="mt-2">
                                 <input
                                     id="email"
-                                    name="email"
+                                    name="organizationEmail"
                                     type="email"
                                     required
                                     autoComplete="email"
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#017901] sm:text-sm sm:leading-6"
+                                    className="block pl-3 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#017901] sm:text-sm sm:leading-6"
                                 />
                             </div>
                         </div>
@@ -63,6 +64,7 @@ export const Signup =()=>{
                                     name="password"
                                     type="password"
                                     required
+                                    min={5}
                                     autoComplete="current-password"
                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#2ac42a] sm:text-sm sm:leading-6"
                                 />
@@ -81,14 +83,14 @@ export const Signup =()=>{
 
                     <p className="mt-10 text-center text-sm text-gray-500">
                         <a href="/orgsignup" className="font-semibold leading-6 text-[#017901] hover:[#017901]text-indigo-500">
-                           Signup as an organization
+                            Signup as an organization
                         </a>
                         <br />
                         already a member?{' '}
                         <a href="/login" className="font-semibold leading-6 text-[#017901] hover:[#017901]text-indigo-500">
-                           login
+                            login
                         </a>
-                     
+
                     </p>
                 </div>
             </div>

@@ -10,15 +10,15 @@ export const Footer = () => {
   return (
       <footer className='w-full p-10 bg-[#017901] '>
           <hr />
-          <div className='flex justify-between items-center'>
+          <div className='flex justify-center md:justify-between flex-col md:flex-row mb-7 md:mb-0 items-center'>
               <img src={Logo} alt="" className='w-[200px]' />
               <div className='bg-white p-2 rounded-md '>
                   <input type="text" placeholder='Enter your email' className=' bg-transparent text-center text-[#017901] outline-none' />
-                  <button className='bg-[#017901] p-1 px-3 rounded-md text-white outline-none border-none active:outline-none '> Submit</button>
+                  <button className='bg-[#017901] p-1 px-3 rounded-md text-white outline-none border-none active:outline-none '> Subscribe now</button>
               </div>
           </div>
           <hr />
-          <div className='text-white flex justify-between px-1 pt-4'>
+          <div className='text-white flex justify-between px-1 pt-4 '>
               <span className='text-sm text-neutral-300 '>
                   &copy;  2024 group 4, Inc. All rights reserved.
               </span>
