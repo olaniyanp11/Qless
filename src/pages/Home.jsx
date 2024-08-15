@@ -1,6 +1,6 @@
 import React from 'react'
 import {Nav} from "../components/Nav"
-import Hero from '../assets/queue2.jpg'
+import Hero from '../assets/queue2.webp'
 import { Link } from 'react-router-dom'
 import { BiReceipt } from 'react-icons/bi'
 import { GiPlatform } from 'react-icons/gi'
