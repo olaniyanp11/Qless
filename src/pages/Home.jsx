@@ -10,6 +10,7 @@ import About from "../assets/about.jpg"
 import Queue from "../assets/queue.jpg"
 import { BiCheckCircle } from 'react-icons/bi'
 import Group from "../assets/group.jpg"
+import { useState } from 'react'
 
 export const Home = () => {
   return (
@@ -22,7 +23,7 @@ export const Home = () => {
           <div className='absolute top-0 w-full h-full flex flex-col  justify-center items-center'>
             <h1 className=' text-[130px] font-bold text-white mb-0 pb-0 leading-[0.8] '>Qless</h1>
             <article className='text-white'>Simplify your Receipts, Amplify Your Business</article>
-            <Link to='/signup' className='bg-transparent mt-4 p-3 px-8 text-center font-bold text-[white]  rounded-md border border-white hover:bg-[white] hover:text-[#017901] transition-all duration-300'>Get started now </Link>
+            <Link to='/signup' className='bg-[#e9b31f] mt-4 p-3 px-8 text-center font-bold text-[white]  rounded-md border border-[#e9b31f] hover:bg-[white] hover:text-[#e9b31f] transition-all duration-300'>Get started now </Link>
           </div>
         </div>
         <div className='flex justify-center mb-[80px]'>
@@ -47,8 +48,8 @@ export const Home = () => {
         <section className='pt-10'>
           <h2 className='text-center text-[#017901] font-bold text-[40px]'>Why choose Qless</h2>
           <section >
-            <div className='flex w-full py-11 px-10 sm:flex-col md:flex-row flex-col justify-end items-center '>
-              <div className='md:w-1/2 mb-10 md:mb-10  w-full flex flex-col gap-4'>
+            <div className='flex w-full py-10 md:px-11 px-0 sm:flex-col md:flex-row flex-col justify-end items-center '>
+              <div className='md:w-1/2 mb-10 md:mb-10  w-full flex flex-col gap-4 '>
                   <div className='flex  gap-1 justify-center md:justify-end'>
                   <BiCheckCircle className='text-[#017901] text-[40px]' />
                   <article className='text-sm text-neutral-400 w-2/3'>

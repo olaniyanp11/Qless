@@ -15,7 +15,7 @@ export const Nav = () => {
           <li><Link to="/about" className='font-sans text-sm text-neutral-500 hover:text-[#017901] transition duration-300'>About</Link></li>
           <li><Link to="/contact" className='font-sans text-sm text-neutral-500 hover:text-[#017901] transition duration-300'>Contact</Link></li>
         </ul>
-        <Link to="/Login" className=' bg-[#017901] text-white p-2 rounded-md w-[100px] text-center hover:text-[#017901] hover:bg-transparent border hover:border-[#017901]  transition duration-300'> Login</Link>
+        <Link to="/Login" className=' bg-[#e9b31f] text-white p-2 rounded-md w-[100px] text-center hover:text-[#017901] hover:bg-transparent border hover:border-[#017901]  transition duration-300'> Login</Link>
 
       </span>
       <FiMenu className='text-[#017901] flex sm:hidden' />

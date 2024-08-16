@@ -14,7 +14,7 @@ export const Login = () => {
                 </div>
 
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form action="#" method="POST" className="space-y-6">
+                    <form action="/orgdashboard" method="get" className="space-y-6">
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                                 Email address
@@ -80,7 +80,7 @@ export const Login = () => {
 
                     <p className="mt-10 text-center text-sm text-gray-500">
                         Not a member?{' '}
-                        <Link to="/Signup" className="font-semibold leading-6 text-[#017901] hover:[#017901]text-indigo-500">
+                        <Link to="/signup" className="font-semibold leading-6 text-[#017901] hover:[#017901]text-indigo-500">
                             Signup now
                         </Link>
                     </p>

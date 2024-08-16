@@ -1,6 +1,7 @@
 import React from 'react'
 import { Nav } from '../components/Nav'
 import { Footer } from '../components/Footer'
+import { Link } from 'react-router-dom'
 
 export const OrgSignup = () => {
     return (
@@ -82,14 +83,14 @@ export const OrgSignup = () => {
                     </form>
 
                     <p className="mt-10 text-center text-sm text-gray-500">
-                        <a href="/orgsignup" className="font-semibold leading-6 text-[#017901] hover:[#017901]text-indigo-500">
-                            Signup as an organization
-                        </a>
+                        <Link to="/signup" className="font-semibold leading-6 text-[#017901] hover:[#017901]text-indigo-500">
+                            Signup as an Individual
+                        </Link>
                         <br />
                         already a member?{' '}
-                        <a href="/login" className="font-semibold leading-6 text-[#017901] hover:[#017901]text-indigo-500">
+                        <Link to="/login" className="font-semibold leading-6 text-[#017901] hover:[#017901]text-indigo-500">
                             login
-                        </a>
+                        </Link>
 
                     </p>
                 </div>
