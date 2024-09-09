@@ -1,6 +1,6 @@
 import React from 'react'
 import {Nav} from "../components/Nav"
-import Hero from '../assets/queue2.webp'
+import Hero from '../assets/0x0.webp'
 import { Link } from 'react-router-dom'
 import { BiReceipt } from 'react-icons/bi'
 import { GiPlatform } from 'react-icons/gi'
@@ -19,11 +19,11 @@ export const Home = () => {
         <Nav />
         <div id='home' className='w-full h-[90vh] relative'>
           <img src={Hero} alt="" className='w-full object-cover bg-top bg-no-repeat h-full absolute z-1' />
-          <div className='w-full h-full absolute bg-gradient-to-t from-[#053905] to-[#08b0082a] z-2 top-0'></div>
-          <div className='absolute top-0 w-full h-full flex flex-col  justify-center items-center'>
-            <h1 className=' text-[130px] font-bold text-white mb-0 pb-0 leading-[0.8] '>Qless</h1>
-            <article className='text-white'>Simplify your Receipts, Amplify Your Business</article>
-            <Link to='/signup' className='bg-[#e9b31f] mt-4 p-3 px-8 text-center font-bold text-[white]  rounded-md border border-[#e9b31f] hover:bg-[white] hover:text-[#e9b31f] transition-all duration-300'>Get started now </Link>
+          <div className='w-full h-full absolute bg-[#082908a8] z-2 top-0'></div>
+          <div className='absolute top-0 w-full h-full flex flex-col  justify-center items-start pl-[13%]'>
+            <h1 className='text-[100px] sm:text-[130px] font-bold text-white mb-0 pb-0 leading-[0.8] '>Qless</h1>
+            <article className='w-full sm:w-1/2 text-neutral-100 '>Qless is your one-stop receipt generating app. Effortlessly create, organize, and manage your receipts with ease. </article>
+            <Link to='/signup' className='bg-[#e9b31f] mt-4 p-3 px-8 text-center font-bold text-[white]  rounded-sm border border-[#e9b31f] hover:bg-[white] hover:text-[#e9b31f] transition-all duration-300'>Get started now </Link>
           </div>
         </div>
         <div className='flex justify-center mb-[80px]'>
@@ -45,7 +45,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <section className='pt-10'>
+        <section className=''>
           <h2 className='text-center text-[#017901] font-bold text-[40px]'>Why choose Qless</h2>
           <section >
             <div className='flex w-full py-10 md:px-11 px-0 sm:flex-col md:flex-row flex-col justify-end items-center '>
@@ -69,8 +69,8 @@ export const Home = () => {
                   </article>
                 </div>
               </div>
-              <div className='h-[300px] sm:w-full md:w-1/2 w-full flex justify-center'>
-                <img src={Group} alt="" className='h-full rounded-md' />
+              <div className='h-[350px] sm:w-full md:w-1/2 w-[90%] flex justify-center relative px-3 sm:px-0'>
+                <img src={Group} alt="" className='w-[500px] rounded-md absolute bg-cover ' />
               </div>
             </div>
             <div></div>
@@ -85,7 +85,7 @@ export const Home = () => {
           </div>
         </section>
         <div className='mt-[100px] flex justify-center items-center'>
-          <div className='w-3/4 py-5 bg-[#041e040b] p-3 flex flex-col items-center rounded-md mb-10'>
+          <div className='sm:w-3/4 w-full py-5 bg-[#041e0409] backdrop-blur-md p-3 flex flex-col items-center rounded-md mb-10'>
             <h2 className='text-center text-[#017901] font-bold text-[40px]'>About us</h2>
             <span className='w-full flex flex-col justify-center items-center'>
               <small className='text-center text-sm w-2/3 text-neutral-400 '> Qless is your all in one solution for efficient and hassle free receipt generation. Designed for business of all sizes.

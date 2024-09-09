@@ -4,6 +4,9 @@ import { Login } from './pages/Login.jsx';
 import { Signup } from './pages/Signup.jsx';
 import { OrgSignup } from './pages/OrgSignup.jsx';
 import {  OrgDashboard } from './pages/Organization/Dashboard.jsx';
+import { Upload } from './pages/Organization/Upload.jsx';
+import { Allproducts } from './pages/Allproducts.jsx';
+import { SingleProduct } from './pages/SingleProduct.jsx';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/orgsignup" element={<OrgSignup />} />
         <Route path="/orgdashboard" element={<OrgDashboard />} />
+        <Route path="/uploadProduct" element={<Upload />} />
+        <Route path="/allProduct" element={<Allproducts />} />
+        <Route path="/singleProduct" element={<SingleProduct />} />
       </Routes>
     </BrowserRouter>
   );
