@@ -76,12 +76,14 @@ export const Home = () => {
             <div></div>
           </section>
         </section>
-        <section className='w-full h-[150px] relative'>
+        <section className='w-full h-[300px] relative'>
           <img src={Queue} alt="" className='w-full h-full object-cover absolute z-1' />
-          <div className='absolute bg-[#031b03a5] z-10 w-full h-full top-0'></div>
-          <div className='text-white absolute top-0 z-20 font-sans w-full py-5 '>
-            <div className='font-bold text-[40px] text-center'>Get started with Qless </div>
-            <article className='text-center'> join the growing community of businesses that trust Qless to simplify their operations and enhance customer satisfaction. </article>
+          <div className='absolute bg-[#031b03cc] z-10 w-full h-full top-0'></div>
+          <div className='text-white absolute top-0 z-20 font-sans w-full py-5 pl-[10%] flex flex-col justify-center items-start h-full'>
+            <div className='font-bold text-[40px] text-left'>Get started with Qless </div>
+            <article className='text-left'> join the growing community of businesses that trust Qless to simplify their operations and enhance customer satisfaction. </article>
+            <Link to='/signup' className='bg-[#0c420c] mt-4 p-3 px-8 text-center font-bold text-[white]  rounded-md border border-[#017901] hover:bg-[white] hover:text-[#017901] transition-all duration-300'>Get started now </Link>
+
           </div>
         </section>
         <div className='mt-[100px] flex justify-center items-center'>
@@ -92,14 +94,14 @@ export const Home = () => {
 
               </small>
               <div className='relative w-full  flex flex-col md:flex-row justify-center md:justify-between gap-10 px-[50px] pb-10 pt-10'>
-                <div className='w-full md:w-1/3 h-250px rounded-lg '>
-                  <img src={About} className=' top-0 rounded-xl h-full' alt="" />
+                <div className='w-full md:w-1/3 h-250px rounded-sm '>
+                  <img src={About} className=' top-0 rounded-sm h-full' alt="" />
                 </div>
-                <div className='w-full md:w-1/3 h-250px rounded-lg '>
-                  <img src={About} className=' top-0 rounded-xl' alt="" />
+                <div className='w-full md:w-1/3 h-250px rounded-sm '>
+                  <img src={About} className=' top-0 rounded-sm' alt="" />
                 </div>
-                <div className='w-full md:w-1/3 h-250px rounded-lg '>
-                  <img src={About} className=' top-0 rounded-xl' alt="" />
+                <div className='w-full md:w-1/3 h-250px rounded-sm '>
+                  <img src={About} className=' top-0 rounded-sm' alt="" />
                 </div>
               </div>
             </span>
