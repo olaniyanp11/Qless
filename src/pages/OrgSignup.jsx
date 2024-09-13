@@ -45,7 +45,7 @@ export const OrgSignup = () => {
                 navigate('/login'); // Navigate to login page on success
             }
         } catch (error) {
-            setError(error.response?.data?.message || 'Signup failed. Please try again.');
+            showAlert(error.response?.data?.message || 'Signup failed. Please try again.');
             handleClickErr(error.response?.data?.message || 'Error occurred');
         }
 
