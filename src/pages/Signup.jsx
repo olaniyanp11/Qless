@@ -1,25 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { Nav } from '../components/Nav';
 import { Footer } from '../components/Footer';
-import { Link } from 'react-router-dom';
-import axios from 'axios'
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { useAlert } from '../components/AlertContext';
+
 export const Signup = () => {
-    const [fullname, setFullname] = useState('');
+    const [name, setFullname] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
     const navigate = useNavigate();
+    const { showAlert } = useAlert();
+    const apiUrl = import.meta.env.VITE_API_URL;
 
+    const handleClickErr = (err) => {
+        showAlert('Error: ' + err, 'error'); // Improved error message
+    };
 
     const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevent page refresh
+        try {
+            console.log({ name, email, password });
+            const response = await axios.post(`${apiUrl}/user/signup`, { name, email, password });
 
-        e.preventDefault()
-        let response = await axios.post('http://localhost:3000/user/signup', { fullname, email, password })
-        if (response.status === 200) {
-            navigate('/login')
+            if (response.status === 200) {
+                showAlert('Signup successful! Please log in.', 'success'); // Success alert
+                navigate('/login'); // Navigate to login page on success
+            }
+        } catch (error) {
+            setError(error.response?.data?.message || 'Signup failed. Please try again.');
+            handleClickErr(error.response?.data?.message || 'Error occurred'); // Call alert on error
         }
-    }
+    };
+
     return (
         <>
             <Nav />
@@ -42,7 +56,7 @@ export const Signup = () => {
                                     name="fullname"
                                     type="text"
                                     required
-                                    value={fullname}
+                                    value={name}
                                     onChange={(e) => setFullname(e.target.value)}
                                     autoComplete="matricNumber"
                                     className="block w-full pl-4 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#017901] sm:text-sm sm:leading-6"
