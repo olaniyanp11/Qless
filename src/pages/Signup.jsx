@@ -29,6 +29,7 @@ export const Signup = () => {
                 navigate('/login'); // Navigate to login page on success
             }
         } catch (error) {
+            console.log(error)
             handleClickErr(error.response?.data?.message || 'Error occurred'); // Call alert on error
         }
     };
@@ -52,7 +53,7 @@ export const Signup = () => {
                             <div className="mt-2">
                                 <input
                                     id="matricNumber"
-                                    name="fullname"
+                                    name="name"
                                     type="text"
                                     required
                                     value={name}
